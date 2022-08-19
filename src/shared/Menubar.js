@@ -1,75 +1,57 @@
-import React from "react";
-
+import { BiMenuAltLeft } from "react-icons/bi";
+import { BsFillSunFill, BsMoonStarsFill } from "react-icons/bs";
+import { IoIosNotificationsOutline } from "react-icons/io";
+import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.png";
+import userImg from "../assets/images/user.png";
+import CustomLink from "./CustomLink";
 const Menubar = () => {
+  const menubar = (
+    <>
+      <CustomLink to="/">Dashboard</CustomLink>
+      <CustomLink to="/campaign">Campaign</CustomLink>
+      <CustomLink to="/Hypesocial">Hypesocial</CustomLink>
+      <CustomLink to="/insights">Insights</CustomLink>
+    </>
+  );
   return (
-    <div class="navbar bg-primary">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <label tabindex="0" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+    <nav className="bg-primary">
+      <div class="navbar w-full lg:w-[90%] mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <BiMenuAltLeft className="text-neutral text-3xl" />
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary rounded-box w-52"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </label>
-          <ul
-            tabindex="0"
-            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            <li>
-              <a>Item 1</a>
-            </li>
-
-            <li>
-              <a>Item 3</a>
-            </li>
-          </ul>
-        </div>
-        <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal p-0">
-          <li>
-            <a>Item 1</a>
-          </li>
-          <li tabindex="0">
-            <a>
-              Parent
-              <svg
-                class="fill-current"
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-              >
-                <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-              </svg>
-            </a>
-            <ul class="p-2">
-              <li>
-                <a>Submenu 1</a>
-              </li>
-              <li>
-                <a>Submenu 2</a>
-              </li>
+              {menubar}
             </ul>
-          </li>
-          <li>
-            <a>Item 3</a>
-          </li>
-        </ul>
+          </div>
+          <Link to="/">
+            <img src={logo} alt="" />
+          </Link>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal p-0">{menubar}</ul>
+        </div>
+        <div class="navbar-end ">
+          <div className="flex justify-center items-center space-x-3">
+            <IoIosNotificationsOutline className="text-neutral text-2xl" />
+            <label class="swap swap-rotate">
+              <input type="checkbox" />
+              <BsFillSunFill className="swap-on fill-current text-neutral" />
+              <BsMoonStarsFill className="swap-off fill-current text-neutral" />
+            </label>
+            <div className="text-neutral flex justify-center items-center space-x-2">
+              <small className="font-semibold">Hi,Rakib</small>
+              <img className="w-8" src={userImg} alt="" />
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="navbar-end "></div>
-    </div>
+    </nav>
   );
 };
 

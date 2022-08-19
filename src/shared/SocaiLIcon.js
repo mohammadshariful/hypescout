@@ -7,7 +7,7 @@ import {
 
 const SocaiLIcon = () => {
   return (
-    <ul className="flex justify-center items-center gap-6 my-3 text-accent">
+    <ul className="flex justify-center items-center gap-6 my-3 text-accent text-2xl">
       <li>
         <AiFillFacebook />
       </li>

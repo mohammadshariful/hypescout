@@ -1,8 +1,8 @@
 import { BiFilterAlt, BiSearch } from "react-icons/bi";
 const SearchArea = () => {
   return (
-    <div className="my-6 p-4 bg-primary rounded-lg">
-      <div className="flex justify-between items-center flex-col lg:flex-row gap-3">
+    <div className="mb-6 p-4 bg-primary rounded-lg">
+      <div className="flex justify-between items-center flex-col md:flex-row gap-3">
         <p className="text-neutral font-semibold text-xl lg:text-2xl">
           Profile(100)
         </p>
@@ -10,7 +10,7 @@ const SearchArea = () => {
           <input
             type="text"
             placeholder="Search Profile"
-            class="input input-bordered w-[300px] pl-10 text-xl  lg:w-full bg-transparent border border-3 border-purple-300 text-neutral"
+            class="input input-bordered w-[300px] pl-10 text-xl  md:w-full bg-transparent border border-3 border-purple-300 text-neutral"
           />
           <BiSearch className="absolute top-4 left-3 text-accent text-xl " />
         </div>
