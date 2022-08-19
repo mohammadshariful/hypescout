@@ -3,7 +3,7 @@ import userImg from "../../assets/images/user.png";
 import SocaiLIcon from "../../shared/SocaiLIcon";
 const ProfileCard = () => {
   return (
-    <article className="bg-primary p-8 rounded-lg border-2 border-transparent hover:border-accent">
+    <article className="w-[300px] lg:w-full  bg-primary p-8 rounded-lg border-2 border-transparent hover:border-accent">
       <img className="block mx-auto mb-4" src={userImg} alt="" />
       <div>
         <h3 className="text-center text-neutral font-semibold text-xl lg:text-2xl">

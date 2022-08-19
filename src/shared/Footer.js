@@ -2,10 +2,10 @@ import logo from "../assets/images/logo.png";
 import SocaiLIcon from "./SocaiLIcon";
 const Footer = () => {
   return (
-    <footer className="bg-primary py-5">
+    <footer className="bg-primary py-8">
       <div className="w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-4 justify-items-center text-center gap-4 lg:gap-0">
         <div className="text-accent">
-          <img className="w-28 block mx-auto" src={logo} alt="" />
+          <img className="w-28 block mx-auto py-4" src={logo} alt="" />
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
             sed ultricies volutpat rhoncus faucibus sit.
