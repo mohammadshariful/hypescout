@@ -1,4 +1,5 @@
 import React from "react";
+import FilterModal from "./FilterModal";
 import ProfileCard from "./ProfileCard";
 import SearchArea from "./SearchArea";
 
@@ -12,6 +13,7 @@ const UsersProfile = () => {
           <ProfileCard key={index} />
         ))}
       </div>
+      <FilterModal />
     </main>
   );
 };

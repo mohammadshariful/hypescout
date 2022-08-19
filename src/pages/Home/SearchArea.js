@@ -14,11 +14,14 @@ const SearchArea = () => {
           />
           <BiSearch className="absolute top-4 left-3 text-accent text-xl " />
         </div>
-        <div className="text-neutral bg-purple-700 rounded-md px-3 py-2">
-          <button className="flex items-center font-semibold space-x-2">
+        <div className="text-neutral bg-purple-700 rounded-md px-3 py-2 ">
+          <label
+            for="filterModal"
+            className="flex items-center font-semibold space-x-2 modal-button cursor-pointer"
+          >
             <BiFilterAlt />
             <p>Advance Filter</p>
-          </button>
+          </label>
         </div>
       </div>
     </div>
