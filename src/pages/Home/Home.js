@@ -1,10 +1,11 @@
 import React from "react";
+import UsersProfile from "./UsersProfile";
 
 const Home = () => {
   return (
-    <div>
-      <h1>home </h1>
-    </div>
+    <section className="w-[90%] mx-auto">
+      <UsersProfile />
+    </section>
   );
 };
 

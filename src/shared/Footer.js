@@ -1,10 +1,5 @@
-import {
-  AiFillFacebook,
-  AiFillInstagram,
-  AiFillLinkedin,
-  AiOutlineTwitter,
-} from "react-icons/ai";
 import logo from "../assets/images/logo.png";
+import SocaiLIcon from "./SocaiLIcon";
 const Footer = () => {
   return (
     <footer className="bg-primary py-5">
@@ -15,20 +10,7 @@ const Footer = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum
             sed ultricies volutpat rhoncus faucibus sit.
           </p>
-          <ul className="flex justify-center items-center gap-6 mt-2">
-            <li>
-              <AiFillFacebook />
-            </li>
-            <li>
-              <AiFillInstagram />
-            </li>
-            <li>
-              <AiFillLinkedin />
-            </li>
-            <li>
-              <AiOutlineTwitter />
-            </li>
-          </ul>
+          <SocaiLIcon />
         </div>
 
         <div>
