@@ -8,7 +8,7 @@ const UsersProfile = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [textQuery, setTextQuery] = useState("");
   useEffect(() => {
-    const url = `http://localhost:5000/usersprofile`;
+    const url = `https://hypescout-2022.herokuapp.com/usersprofile`;
     setIsLoading(true);
     fetch(url)
       .then((res) => res.json())
