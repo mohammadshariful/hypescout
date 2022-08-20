@@ -4,7 +4,7 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        mytheme: {
+        dark: {
           primary: "#1E2327",
 
           secondary: "#161B22",
@@ -22,6 +22,11 @@ module.exports = {
           warning: "#CB7315",
 
           error: "#F41A4D",
+        },
+      },
+      {
+        light: {
+          primary: "#fff",
         },
       },
     ],

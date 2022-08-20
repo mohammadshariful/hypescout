@@ -9,7 +9,7 @@ const CustomLink = ({ children, to, ...props }) => {
       <Link
         className={`m-3 font-semibold text-xl}`}
         style={{
-          color: match ? "#2ecc71" : "#fff",
+          color: match ? "#fff" : "#637381",
         }}
         to={to}
         {...props}

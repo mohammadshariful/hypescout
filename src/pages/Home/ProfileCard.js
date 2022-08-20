@@ -1,13 +1,12 @@
 import { IoLocationSharp, IoTime } from "react-icons/io5";
-import userImg from "../../assets/images/user.png";
 import SocaiLIcon from "../../shared/SocaiLIcon";
-const ProfileCard = () => {
+const ProfileCard = ({ user: { userName, profileUrl } }) => {
   return (
     <article className="w-[300px] lg:w-full  bg-primary p-8 rounded-lg border-2 border-transparent hover:border-accent">
-      <img className="block mx-auto mb-4" src={userImg} alt="" />
+      <img className="block mx-auto mb-4" src={profileUrl} alt="" />
       <div>
         <h3 className="text-center text-neutral font-semibold text-xl lg:text-2xl">
-          Rafez Hossain
+          {userName}
         </h3>
         <div className="text-accent flex justify-center items-center gap-2 my-2">
           <IoLocationSharp />

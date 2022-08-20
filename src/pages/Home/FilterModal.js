@@ -112,7 +112,7 @@ const FilterModal = () => {
               </button>
               <button
                 type="submit"
-                className="btn btn-md bg-purple-500 text-neutral border-transparent hover:bg-purple-500 hover:border-transparent"
+                className="btn btn-md bg-purple-700 text-neutral border-transparent hover:bg-purple-700 hover:border-transparent"
               >
                 Apply
               </button>

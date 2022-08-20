@@ -15,7 +15,7 @@ const Menubar = () => {
     </>
   );
   return (
-    <nav className="bg-primary">
+    <nav className="bg-primary sticky top-0 left-0 w-full z-50">
       <div class="navbar w-full lg:w-[90%] mx-auto">
         <div class="navbar-start">
           <div class="dropdown">
@@ -40,7 +40,11 @@ const Menubar = () => {
           <div className="flex justify-center items-center space-x-3">
             <IoIosNotificationsOutline className="text-neutral text-2xl" />
             <label class="swap swap-rotate">
-              <input type="checkbox" />
+              <input
+                type="checkbox"
+                data-toggle-theme="dark,light"
+                data-act-class="ACTIVECLASS"
+              />
               <BsFillSunFill className="swap-on fill-current text-neutral" />
               <BsMoonStarsFill className="swap-off fill-current text-neutral" />
             </label>

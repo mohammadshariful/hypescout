@@ -1,13 +1,15 @@
 import { BiFilterAlt, BiSearch } from "react-icons/bi";
-const SearchArea = () => {
+const SearchArea = ({ usersProfile, textQuery, setTextQuery }) => {
   return (
     <div className="mb-6 p-4 bg-primary rounded-lg">
       <div className="flex justify-between items-center flex-col md:flex-row gap-3">
         <p className="text-neutral font-semibold text-xl lg:text-2xl">
-          Profile(100)
+          Profile({usersProfile.length})
         </p>
         <div className="flex-1 relative">
           <input
+            value={textQuery}
+            onChange={(e) => setTextQuery(e.target.value)}
             type="text"
             placeholder="Search Profile"
             class="input input-bordered w-[300px] pl-10 text-xl  md:w-full bg-transparent border border-3 border-purple-300 text-neutral"
