@@ -2,12 +2,12 @@ const FilterModal = () => {
   const handleFormSubmit = (e) => e.preventDefault();
   return (
     <div>
-      <input type="checkbox" id="filterModal" class="modal-toggle" />
-      <div class="modal modal-bottom sm:modal-middle">
-        <div class="modal-box bg-primary">
+      <input type="checkbox" id="filterModal" className="modal-toggle" />
+      <div className="modal modal-bottom sm:modal-middle">
+        <div className="modal-box bg-primary">
           <label
-            for="filterModal"
-            class="btn bg-primary text-neutral btn-sm btn-circle absolute right-2 top-2"
+            htmlFor="filterModal"
+            className="btn bg-primary text-neutral btn-sm btn-circle absolute right-2 top-2"
           >
             ✕
           </label>
@@ -15,54 +15,70 @@ const FilterModal = () => {
           <hr className="my-3 " />
           <form onSubmit={handleFormSubmit}>
             <div className="grid grid-cols-1 justify-items-center">
-              <div class="form-control w-full max-w-xs">
-                <label class="label">
-                  <span class="label-text text-neutral text-lg">
+              <div className="form-control w-full max-w-xs">
+                <label className="label">
+                  <span className="label-text text-neutral text-lg">
                     Influencer's Industry
                   </span>
                 </label>
-                <select class="select select-bordered bg-secondary text-accent">
-                  <option selected>Select Option</option>
+                <select
+                  defaultValue={"option"}
+                  className="select select-bordered bg-secondary text-accent"
+                >
+                  <option>Select Option</option>
                 </select>
               </div>
-              <div class="form-control w-full max-w-xs">
-                <label class="label">
-                  <span class="label-text text-neutral text-lg">
+              <div className="form-control w-full max-w-xs">
+                <label className="label">
+                  <span className="label-text text-neutral text-lg">
                     Influencer's Country
                   </span>
                 </label>
-                <select class="select select-bordered bg-secondary text-accent">
-                  <option selected>Select Option</option>
+                <select
+                  defaultValue={"option"}
+                  className="select select-bordered bg-secondary text-accent"
+                >
+                  <option>Select Option</option>
                 </select>
               </div>
-              <div class="form-control w-full max-w-xs">
-                <label class="label">
-                  <span class="label-text text-neutral text-lg">
+              <div className="form-control w-full max-w-xs">
+                <label className="label">
+                  <span className="label-text text-neutral text-lg">
                     Audience's Country
                   </span>
                 </label>
-                <select class="select select-bordered bg-secondary text-accent">
-                  <option selected>Select Option</option>
+                <select
+                  defaultValue={"option"}
+                  className="select select-bordered bg-secondary text-accent"
+                >
+                  <option>Select Option</option>
                 </select>
               </div>
-              <div class="form-control w-full max-w-xs">
-                <label class="label">
-                  <span class="label-text text-neutral text-lg">
+              <div className="form-control w-full max-w-xs">
+                <label className="label">
+                  <span className="label-text text-neutral text-lg">
                     Influencer's Social Media Platform
                   </span>
                 </label>
-                <select class="select select-bordered bg-secondary text-accent">
-                  <option selected>Select Option</option>
+                <select
+                  defaultValue={"option"}
+                  className="select select-bordered bg-secondary text-accent"
+                >
+                  <option>Select Option</option>
                 </select>
               </div>
-              <div class="form-control w-full max-w-xs">
-                <label class="label">
-                  <span class="label-text text-neutral text-lg">
+              <div className="form-control w-full max-w-xs">
+                <label className="label">
+                  <span className="label-text text-neutral text-lg">
                     Influencer's Social Media Platform
                   </span>
                 </label>
-                <input type="range" class="range bg-primary mb-2" step="25" />
-                <div class="w-full flex justify-between text-xs px-2 text-accent">
+                <input
+                  type="range"
+                  className="range bg-primary mb-2"
+                  step="25"
+                />
+                <div className="w-full flex justify-between text-xs px-2 text-accent">
                   <span>1k</span>
                   <span>25k</span>
                   <span>50k</span>
@@ -72,9 +88,9 @@ const FilterModal = () => {
                   <span>1000k</span>
                 </div>
               </div>
-              <div class="form-control w-full max-w-xs">
-                <label class="label">
-                  <span class="label-text text-neutral text-lg">
+              <div className="form-control w-full max-w-xs">
+                <label className="label">
+                  <span className="label-text text-neutral text-lg">
                     Influencer's Gender
                   </span>
                 </label>
@@ -83,7 +99,7 @@ const FilterModal = () => {
                     <input
                       type="radio"
                       name="radio-2"
-                      class="radio radio-accent"
+                      className="radio radio-accent"
                       checked
                     />
                     <label htmlFor="male" className="text-accent">
@@ -94,7 +110,7 @@ const FilterModal = () => {
                     <input
                       type="radio"
                       name="radio-2"
-                      class="radio radio-accent"
+                      className="radio radio-accent"
                     />
                     <label htmlFor="female" className="text-accent">
                       Female

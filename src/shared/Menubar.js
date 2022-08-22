@@ -16,15 +16,15 @@ const Menubar = () => {
   );
   return (
     <nav className="bg-primary sticky top-0 left-0 w-full z-50">
-      <div class="navbar w-full lg:w-[90%] mx-auto">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
+      <div className="navbar w-full lg:w-[90%] mx-auto">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <label tabIndex="0" className="btn btn-ghost lg:hidden">
               <BiMenuAltLeft className="text-neutral text-3xl" />
             </label>
             <ul
-              tabindex="0"
-              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary rounded-box w-52"
+              tabIndex="0"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary rounded-box w-52"
             >
               {menubar}
             </ul>
@@ -33,13 +33,13 @@ const Menubar = () => {
             <img src={logo} alt="" />
           </Link>
         </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal p-0">{menubar}</ul>
+        <div className="navbar-center hidden lg:flex">
+          <ul className="menu menu-horizontal p-0">{menubar}</ul>
         </div>
-        <div class="navbar-end ">
+        <div className="navbar-end ">
           <div className="flex justify-center items-center space-x-3">
             <IoIosNotificationsOutline className="text-neutral text-2xl" />
-            <label class="swap swap-rotate">
+            <label className="swap swap-rotate">
               <input
                 type="checkbox"
                 data-toggle-theme="dark,light"

@@ -8,17 +8,17 @@ const SearchArea = ({ usersProfile, textQuery, setTextQuery }) => {
         </p>
         <div className="flex-1 relative">
           <input
-            value={textQuery}
+            defaultValue={textQuery}
             onChange={(e) => setTextQuery(e.target.value)}
             type="text"
             placeholder="Search Profile"
-            class="input input-bordered w-[300px] pl-10 text-xl  md:w-full bg-transparent border border-3 border-purple-300 text-neutral"
+            className="input input-bordered w-[300px] pl-10 text-xl  md:w-full bg-transparent border border-3 border-purple-300 text-neutral"
           />
           <BiSearch className="absolute top-4 left-3 text-accent text-xl " />
         </div>
         <div className="text-neutral bg-purple-700 rounded-md px-3 py-2 ">
           <label
-            for="filterModal"
+            htmlFor="filterModal"
             className="flex items-center font-semibold space-x-2 modal-button cursor-pointer"
           >
             <BiFilterAlt />
